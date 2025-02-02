@@ -6,7 +6,7 @@ if config.user_settings and config.user_settings.cache and config.user_settings.
   cache_file = path.expand(config.user_settings.cache.file)
 else
   -- Fall back to default cache file if the user setting is not present
-  cache_file = path.expand(config.default_settings.cache_file)
+  cache_file = path.expand(config.default_settings.cache.file)
 end
 
 local base_dir = path.get_base(cache_file)
