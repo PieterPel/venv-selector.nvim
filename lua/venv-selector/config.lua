@@ -175,7 +175,7 @@ end
 
 M.default_settings = {
     cache = {
-        file = "~/.cache/venv-selector/venvs2.json",
+        file = vim.fn.stdpath("cache") .. "/venv-selector/venvs2.json",
     },
     hooks = { hooks.basedpyright_hook, hooks.pyright_hook, hooks.pylance_hook, hooks.pylsp_hook },
     options = {
